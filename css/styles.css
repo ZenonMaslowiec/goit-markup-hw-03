@@ -43,7 +43,7 @@
           width: 1158px;
           margin: 0 auto;
           padding: 0 15px 0 15px;
-          padding: 120px 0px;
+          /* padding: 120px 0px; */
         }
 
          /*========COMPONENTS========*/
@@ -58,6 +58,16 @@
           background-color: #4D5AE5; 
           padding: 16px 32px 16px 32px;
           border-radius: 4px;
+          min-width: 169px;
+          height: 56px;
+          border: none;
+          cursor: pointer;
+          margin-top: 48px;
+        }
+
+        .mar 
+        {
+          margin-bottom: 72px;
         }
 
          /*========END-COMPONENTS========*/
@@ -74,7 +84,6 @@
         .navigation 
         {
           display: flex;
-          /* gap: 76px;  moje */
           align-items: center;
         }
 
@@ -87,8 +96,6 @@
         .header 
         {
           height: 72px;
-          /* border: 0px 0px 1px 0px; */
-          /* border-color: #E7E9FC; */
           display: flex;
           align-items: center;
           border-bottom : 1px solid #e7e9fc;
@@ -164,6 +171,11 @@
 /*========END-HEADER ========*/
 
 /*========HERO========*/
+        .hero
+        {
+          padding-top: 188px;
+          padding-bottom: 188px;
+        }
 
         .hero .container 
         {
@@ -189,7 +201,7 @@
           letter-spacing: 0.02em;
           text-align: center;
           color: #FFFFFF;
-          padding: 42px;
+          max-width: 496px;
         }
 
         .modal-btn:hover,
@@ -205,6 +217,11 @@
 
    /*========ABOUT========*/
 
+        .about 
+        {
+          padding: 120px 0;
+        }
+
         .secondary-header 
         {
           font-size: 36px;
@@ -216,9 +233,17 @@
           text-transform: capitalize;
         }
 
-        .ntv 
-        {
-          display: none;
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
         }
 
         .about-header-list 
@@ -228,6 +253,7 @@
           line-height: 1.2;
           letter-spacing: 0.02em;
           color: #2E2F42;
+          margin-bottom: 8px;
         }
 
         .about-strengths-list-item 
@@ -235,13 +261,13 @@
           font-size: 16px;
           line-height: 1.5;
           letter-spacing: 0.02em;
-          padding-top: 8px;
         }
 
         .about-strengths-list 
         {
           width: 264px;
           height: 104px;
+          width: calc((100% - 72px) / 4);
         }
 
         .about-strengths 
@@ -259,6 +285,7 @@
         {
           background-color: #F4F4FD;
           height: 732px;
+          padding: 120px 0;
         }
 
         .agency-img 
@@ -274,6 +301,7 @@
           height: 380px;
           border-radius: 0px 0px 4px 4px;
           background-color: #FFFFFF;
+          width: calc((100% - 72px) / 4);
         }
 
         .agency-list-name 
@@ -284,7 +312,7 @@
           letter-spacing: 0.02em;
           text-align: center;
           color: #2E2F42;
-          padding-top: 32px;
+          margin-bottom: 8px;
         }
 
         .agency-list-name-item 
@@ -293,7 +321,11 @@
           line-height: 1.5;
           letter-spacing: 0.02em;
           text-align: center;
-          padding-top: 8px;
+        }
+
+        .species 
+        {
+          padding: 32px 16px;
         }
 
     /*========END-AGENCY========*/
@@ -302,55 +334,54 @@
 
        .portfolio 
        {
-            height: 1240px;
+        height: 1240px;
+        padding-top: 120px;
+        padding-bottom: 120px;
        }
 
        .portfolio-img 
        {
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 48px;
-            column-gap: 24px;
-            padding-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 48px;
+        column-gap: 24px;
        }
 
        .portfolio-img .portfolio-img-list 
        {
-            width: calc((100% - 48px) / 3);
+        width: calc((100% - 48px) / 3);
        }
 
        .portfolio-img-list
        {
-            width: 360px;
+        width: 360px;
        }
 
        .card-content 
       
        {
-            width: 360px;
-            height: 120px;
-            border: 1px solid #E7E9FC;
-            border-top: none;
+        width: 360px;
+        height: 120px;
+        border: 1px solid #E7E9FC;
+        border-top: none;
+        padding: 32px 16px;
        }
 
        .portfolio-list-title 
        {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: 0.02em;
-            color: #2E2F42;
-            padding-top: 32px;
-            padding-left: 16px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
        }
 
        .portfolio-list-product 
        {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            padding-top: 8px;
-            padding-left: 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
        }
 
      /*========END-PORTFOLIO========*/
@@ -361,43 +392,34 @@
       {
         background: #2E2F42;
         height: 312px;
+        padding: 100px 0;
       }
 
       .footer-logo-item-left,
       .footer-logo-item-right
       {
         font-family: Raleway, sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1.17;
-            letter-spacing: 0.03em;
-            color: #4D5AE5;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding-top: 100px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #4D5AE5;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 16px;
       }
 
       .footer-logo-item-right 
       {
-            color: #F4F4FD;
+        color: #F4F4FD;
       }
 
       .footer-text 
       {
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #F4F4FD;
-            padding-top: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
       }
 
            /*========END-FOOTER========*/
-/* do usunięcia */
-                     /* .address-list-item { */
-                       /* display: flex; */
-                     /* } */
-/* .agency .container { */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-
-/* } */

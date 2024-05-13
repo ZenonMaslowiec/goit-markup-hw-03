@@ -40,9 +40,9 @@
 
         .container 
         {
-          width: 1128px;
+          width: 1158px;
           margin: 0 auto;
-          padding: 0 15px;
+          padding: 0 15px 0 15px;
           padding: 120px 0px;
         }
 
@@ -74,7 +74,8 @@
         .navigation 
         {
           display: flex;
-          gap: 76px;
+          /* gap: 76px;  moje */
+          align-items: center;
         }
 
         .navigation-list 
@@ -86,10 +87,11 @@
         .header 
         {
           height: 72px;
-          border: 0px 0px 1px 0px;
-          border-color: #E7E9FC;
+          /* border: 0px 0px 1px 0px; */
+          /* border-color: #E7E9FC; */
           display: flex;
-          align-items: center; 
+          align-items: center;
+          border-bottom : 1px solid #e7e9fc;
         }
 
         .navigation-list-logo-item-left
@@ -102,7 +104,9 @@
           color: #4D5AE5;
           text-decoration: none;
           text-transform: uppercase;
+          margin-right: 76px;
         }
+
         .navigation-list-logo-item-right 
         {
           font-family: Raleway, sans-serif;
@@ -113,8 +117,9 @@
           text-decoration: none;
           text-transform: uppercase;
           color: #2E2F42;
-            
+          margin-right: 76px;  
         }
+
         .navigation-list-link 
         {
           font-size: 16px;
@@ -123,6 +128,8 @@
           letter-spacing: 0.02em;
           text-decoration: none;
           color: #2E2F42;
+          padding-top: 24px;
+          padding-bottom: 24px;
         }
             
         .address-list-mailto-phone
@@ -131,7 +138,7 @@
           line-height: 1.5;
           letter-spacing: 0.02em;
           text-decoration: none;
-          color: #434455;
+          color: #434455; 
         }
 
         .address 

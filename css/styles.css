@@ -292,13 +292,13 @@
         {
           display: flex;
           gap: 24px;
-          margin-top: 72px;
+          /* margin-top: 72px; */
         }
                          
         .agency-img-list 
         {
-          width: 264px;
-          height: 380px;
+          /* width: 264px; */
+          /* height: 380px; */
           border-radius: 0px 0px 4px 4px;
           background-color: #FFFFFF;
           width: calc((100% - 72px) / 4);
